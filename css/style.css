@@ -1,0 +1,96 @@
+* {
+	box-sizing: border-box;
+}
+.content {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 0 150px;
+}
+.content .con-left .c-colors {
+	background-color: #ddd;
+	width: 100px;
+	grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+	padding: 10px 0;
+	border-radius: 6px;
+}
+.content .con-left .c-colors span {
+	height: 70px;
+	display: block;
+	border-radius: 50%;
+	margin: 10px;
+	opacity: .5;
+	position: relative;
+	border-top: 8px solid #8b8b8b;
+}
+.content .con-left .c-colors span:nth-child(1) {
+	background-color: red;
+}
+.content .con-left .c-colors span:nth-child(2) {
+	background-color: orange;
+}
+.content .con-left .c-colors span:nth-child(3) {
+	background-color: green;
+}
+.content .con-left > span {
+	background-color: #ddd;
+	width: 30px;
+	height: 400px;
+	display: block;
+	margin-left: 35px;
+  position: relative;
+}
+i:first-child {
+  padding: 8px 12px;
+  color: red;
+}
+i {
+  position: absolute;
+  top: 20px;
+  left: -16px;
+  background-color: black;
+  padding: 8px;
+  border: 7px solid #ddd;
+  border-radius: 6px;
+  font-size: 35px;
+  color: green;
+}
+.content .con-right {
+	background-color: #ddd;
+	width: 300px;
+	height: 30px;
+	position: relative;
+	margin: 80px 0;
+	flex: 1;
+}
+.content .con-right .counter {
+	position: absolute;
+	top: -25px;
+	left: 38%;
+	background-color: black;
+	color: red;
+	width: 80px;
+	height: 80px;
+	border: 8px solid #ddd;
+	border-radius: 6px;
+	font-size: 40px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.content .con-left .c-colors span.active-r {
+	opacity: 1;
+	box-shadow: 0 1px 15px 5px red;
+}
+.content .con-left .c-colors span.active-o {
+	opacity: 1;
+	box-shadow: 0 1px 15px 5px orange;
+}
+.content .con-left .c-colors span.active-g {
+	opacity: 1;
+	box-shadow: 0 1px 15px 5px green;
+}
+@media (max-width: 767px) {
+.content {
+  padding: 30px;
+}
+}
